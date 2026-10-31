@@ -1,8 +1,8 @@
-# REZO 4.0 — install and play: stretched res on a hotkey in 30 seconds
+# REZO 5.0 — install and play: stretched res on a hotkey, game profiles that switch by themselves
 
 Download → pick a ready set (Stretched / Native) → press the key in the game. Change your screen resolution with global hotkeys straight from a game, no alt-tab. Wrong mode and a black screen? REZO puts the old one back after 10 seconds.
 
-Windows 10/11 · .NET Framework 4.x (already in Windows) · v4.0 · NVIDIA saturation works on NVIDIA cards only
+Windows 10/11 · .NET Framework 4.x (already in Windows) · v5.0 · NVIDIA saturation works on NVIDIA cards only
 
 ![REZO](screenshots/acid-en.png)
 
@@ -13,6 +13,7 @@ Windows 10/11 · .NET Framework 4.x (already in Windows) · v4.0 · NVIDIA satur
 - **Tray** — hotkeys keep working in the tray. Optional "minimize to tray on close", autostart, start minimized
 - **Look** — 5 styles (Acid Chapel by default, Modern, Kova, Minimal, Retro), 4 palettes (Acid Chapel, Violet, Kova, Custom: pick 6 colors yourself), tab menu on top/left/right/bottom
 - **Window** — resizes like a normal window, S/M/L presets, native maximize, Aero Snap and Win11 Snap Layouts, text scales with the window
+- **Game profiles** (new in 5.0) — per game: resolution slot, NVIDIA saturation, night gamma. Four trigger modes in Settings → Game profiles: Launch via REZO (▶ or a desktop shortcut, recommended), Process list, Focused window, WMI (instant, admin). Everything is put back when the game closes, on exit and even after a crash
 - **First start** — a 3-step guide and ready sets: Stretched (1280×960, 1440×1080, 1024×768) or Native + 1080p, only modes your monitor supports, keys Ctrl+Alt+F1…F3
 - **Safe switch** — a new resolution asks «Keep?» for 10 s; no answer or Esc puts the old one back (Settings → Behavior)
 - **Feedback** — About → «Idea» / «Thanks» open a GitHub issue with a template (REZO and Windows version only); «Write feedback» sends a short message to a Google Form right from the app (type, text, optional contact; no other data)
@@ -22,7 +23,7 @@ Windows 10/11 · .NET Framework 4.x (already in Windows) · v4.0 · NVIDIA satur
 - Installer with uninstaller, shortcuts, an Apps entry and a signed build (CN=k311n.intg)
 
 ## Install
-Download `REZO_Setup_4.0.exe` from [Releases](../../releases) and run it. The installer can also add autostart, unlock gamma and trust the k311n.intg certificate.
+Download `REZO_Setup_5.0.exe` from [Releases](../../releases) and run it. The installer can also add autostart, unlock gamma and trust the k311n.intg certificate.
 Portable: download `REZO.exe` and run it from any folder (settings are saved next to the exe).
 
 ## Default hotkeys
@@ -50,14 +51,22 @@ Click a hotkey field → press a combo. Esc cancels, Del clears. One combo = one
 **First start and safe switch**
 | | |
 |---|---|
+| ![Game profiles RU](screenshots/profiles-ru.png) | ![Game profiles EN](screenshots/profiles-en.png) |
 | ![First start](screenshots/first-start.png) | ![Keep or revert](screenshots/keep-or-revert.png) |
 | ![About and feedback](screenshots/about.png) | |
+
+## Anti-cheat
+REZO is built to stay away from games. What it does and doesn't do:
+- **Does:** change the resolution (ChangeDisplaySettingsEx), NVIDIA digital vibrance (NVAPI) and gamma (SetDeviceGammaRamp) — system settings, the same things the Windows and NVIDIA control panels change.
+- **Reads only process names** from a system snapshot (like Task Manager), at most once every 2 s. «Focus» mode also reads which process owns the focused window.
+- **Never:** opens the game process, reads or writes its memory, injects DLLs, installs hooks, draws overlays, sends input or messages to game windows, or uses drivers. Games are launched via the shell without taking a handle to them.
+- No anti-cheat vendor certifies REZO, so there is no «100% safe» promise. «Launch via REZO» and «Process» are the calmest modes; «Focus» changes resolution on every alt-tab and is the riskiest. If unsure, change resolution before starting the game.
 
 # REZO (ru)
 
 ставишь и играешь: скачал, выбрал набор (растянутое или нативное), жмешь клавишу в игре. если монитор не потянул и экран черный — через 10 сек само вернется как было. плюс насыщенность nvidia (только на картах nvidia) и ночная гамма для раста
 
-винда 10/11 · нужен .net framework 4 (он и так в винде есть) · версия 4.0
+винда 10/11 · нужен .net framework 4 (он и так в винде есть) · версия 5.0
 
 ## че умеет
 - **слоты разрешений** — до 8 штук плюс дефолт, на каждый свой бинд, есть бинд по кругу, ▶ применяет сразу, слотам можно дать свое имя (параметры → слоты), оно видно в списке, в трее и в быстром доступе
@@ -66,6 +75,7 @@ Click a hotkey field → press a combo. Esc cancels, Del clears. One combo = one
 - **трей** — бинды работают из трея, можно чтоб крестик сворачивал в трей, автозапуск, старт свернутым
 - **вид** — 5 стилей (по дефолту acid chapel, еще модерн, кова, минимал, ретро), 4 палитры (acid chapel, фиолет, кова и своя, где сам тыкаешь 6 цветов), меню вкладок сверху слева справа или снизу
 - **окно** — тянется за края как обычное, пресеты S M L, разворачивается на весь экран, snap работает, текст подстраивается под размер
+- **профили игр** (новое в 5.0) — на каждую игру свой слот разрешения, насыщенность nvidia и ночная гамма. 4 режима в параметрах → профили игр: запуск через rezo (▶ или ярлык на рабочем столе, рекомендую), по списку процессов, по окну в фокусе, wmi (мгновенно, нужен админ). когда игра закрылась — все возвращается как было, даже если rezo упал
 - **первый запуск** — гайд в 3 шага и готовые наборы: растянутое (1280×960, 1440×1080, 1024×768) или нативное + 1080p, только то что тянет монитор, клавиши ctrl+alt+f1…f3
 - **страховка** — новое разрешение спрашивает «оставить?» 10 сек, не ответил или esc — вернется прежнее (параметры → поведение)
 - **обратная связь** — о разработке → «пожелание» и «спасибо» открывают issue на гитхабе с шаблоном (только версия rezo и винды), «написать отзыв» шлет короткое сообщение в гугл форму прям из проги (тип, текст, контакт по желанию, больше ничего)
@@ -75,7 +85,7 @@ Click a hotkey field → press a combo. Esc cancels, Del clears. One combo = one
 - установщик с удалялкой, ярлыками и подписью
 
 ## как поставить
-качаешь `REZO_Setup_4.0.exe` в релизах и запускаешь, там же галочки на автозапуск, разблок гаммы и сертификат
+качаешь `REZO_Setup_5.0.exe` в релизах и запускаешь, там же галочки на автозапуск, разблок гаммы и сертификат
 или портативно — просто `REZO.exe` в любую папку, настройки лягут рядом
 
 ## бинды по дефолту
@@ -93,3 +103,10 @@ Click a hotkey field → press a combo. Esc cancels, Del clears. One combo = one
 гитхаб [k311n](https://github.com/k311n)
 
 © 2026 k311n.intg все права защищены
+
+## античит
+rezo специально держится подальше от игр. что делает и чего нет:
+- **делает:** меняет разрешение (ChangeDisplaySettingsEx), цифровую интенсивность nvidia (NVAPI) и гамму (SetDeviceGammaRamp) — это системные настройки, то же самое крутят панель винды и nvidia
+- **читает только имена процессов** из системного снимка (как диспетчер задач), не чаще раза в 2 сек. режим «фокус» еще смотрит, чей процесс у окна в фокусе
+- **никогда:** не открывает процесс игры, не читает и не пишет ее память, не внедряет dll, без хуков, оверлеев, эмуляции ввода и сообщений в окна игры, без драйверов. игра запускается через оболочку винды без хэндла на процесс
+- ни один античит rezo не сертифицировал, так что «100% безопасно» никто не обещает. «запуск через rezo» и «процесс» самые спокойные режимы, «фокус» меняет разрешение на каждый альт-таб и самый рискованный. сомневаешься — меняй разрешение до запуска игры

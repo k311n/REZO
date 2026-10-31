@@ -1,5 +1,12 @@
 # Changelog
 
+## 5.0 — 2026-11-01
+- **Game profiles:** per game — resolution slot (or don't change), NVIDIA saturation (or don't change), night gamma on/off/don't change. Popular presets: Valorant, CS2, Rust, Dota 2; add, edit, delete in Settings → Game profiles (up to 8)
+- **Four trigger modes, Off by default:** Launch via REZO (▶ on a profile or a desktop shortcut `REZO.exe --play N`, recommended), Process (process name list every 2 s), Focus (focused window, riskiest — warned in «?»), WMI (instant start/stop events; without admin rights REZO says so and falls back to Process)
+- Everything is restored exactly as before (resolution, saturation, gamma) when the game closes, when REZO exits, and on the next start after a crash
+- Anti-cheat rules in code: only process names from a Toolhelp snapshot, no process handles, memory, hooks, overlays, input or messages to game windows; games are started via ShellExecute without a handle. Second-instance messages now go only to REZO's own windows instead of a broadcast
+- README: Anti-cheat section (EN + RU)
+
 ## 4.0 — 2026-10-31
 - **Start in 30 seconds:** first-start guide in 3 short steps with ready sets — Stretched (1280×960, 1440×1080, 1024×768) or Native + 1080p. Only modes your monitor supports, keys Ctrl+Alt+F1…F3
 - **Safe switch:** a resolution applied for the first time asks «Keep?» with a 10 s countdown; Enter keeps, Esc or no answer puts the old one back. Toggle in Settings → Behavior (on by default)
