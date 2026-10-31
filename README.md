@@ -1,25 +1,28 @@
-# REZO
+# REZO 4.0 — install and play: stretched res on a hotkey in 30 seconds
 
-Change your screen resolution with global hotkeys — straight from a game, without alt-tabbing. Plus NVIDIA digital vibrance and a "night in Rust" gamma toggle.
+Download → pick a ready set (Stretched / Native) → press the key in the game. Change your screen resolution with global hotkeys straight from a game, no alt-tab. Wrong mode and a black screen? REZO puts the old one back after 10 seconds.
 
-Windows 10/11 · .NET Framework 4.x (already in Windows) · v3.15
+Windows 10/11 · .NET Framework 4.x (already in Windows) · v4.0 · NVIDIA saturation works on NVIDIA cards only
 
-![REZO](screenshots/modern-kova.png)
+![REZO](screenshots/acid-en.png)
 
 ## Features
 - **Resolution slots** — up to 8 slots plus a default, each with its own hotkey. A cycle hotkey loops through them. ▶ applies right away. Slots can be renamed (Settings → Slots), the name shows in the list, the tray menu and quick access
 - **Color** (NVIDIA): digital vibrance on/off, 4 presets + normal (50%), saturation per resolution slot, and a hotkey that flips between two values X ↔ Y
 - **Night graphics for Rust** — a hotkey raises Windows gamma from the middle of the scale to the top, press again to restore (one-time unlock button for `GdiIcmGammaRange`)
 - **Tray** — hotkeys keep working in the tray. Optional "minimize to tray on close", autostart, start minimized
-- **Look** — 4 styles (Modern, Kova, Minimal, Retro), 3 palettes (Violet, Kova, Custom: pick 6 colors yourself), tab menu on top/left/right/bottom
+- **Look** — 5 styles (Acid Chapel by default, Modern, Kova, Minimal, Retro), 4 palettes (Acid Chapel, Violet, Kova, Custom: pick 6 colors yourself), tab menu on top/left/right/bottom
 - **Window** — resizes like a normal window, S/M/L presets, native maximize, Aero Snap and Win11 Snap Layouts, text scales with the window
+- **First start** — a 3-step guide and ready sets: Stretched (1280×960, 1440×1080, 1024×768) or Native + 1080p, only modes your monitor supports, keys Ctrl+Alt+F1…F3
+- **Safe switch** — a new resolution asks «Keep?» for 10 s; no answer or Esc puts the old one back (Settings → Behavior)
+- **Feedback** — About → «Idea» / «Thanks» open a GitHub issue with a template (REZO and Windows version only); «Write feedback» sends a short message to a Google Form right from the app (type, text, optional contact; no other data)
 - **Updates** — Settings → Updates → «Check»: asks GitHub Releases for a newer version and updates in one click (installed copy runs the silent installer, portable copy swaps its exe and restarts). The download must be signed by k311n.intg. "Check on startup" is off by default, REZO makes no other network requests
 - **Reset** — Settings → Extra → «Reset all settings»
 - Every option has a «?» with a short explanation. RU / ENG
 - Installer with uninstaller, shortcuts, an Apps entry and a signed build (CN=k311n.intg)
 
 ## Install
-Download `REZO_Setup_3.15.exe` from [Releases](../../releases) and run it. The installer can also add autostart, unlock gamma and trust the k311n.intg certificate.
+Download `REZO_Setup_4.0.exe` from [Releases](../../releases) and run it. The installer can also add autostart, unlock gamma and trust the k311n.intg certificate.
 Portable: download `REZO.exe` and run it from any folder (settings are saved next to the exe).
 
 ## Default hotkeys
@@ -35,41 +38,44 @@ Portable: download `REZO.exe` and run it from any folder (settings are saved nex
 Click a hotkey field → press a combo. Esc cancels, Del clears. One combo = one action.
 
 ## Screenshots
+**Styles** (left RU, right EN)
+| RU | EN |
+|---|---|
+| ![Acid Chapel RU](screenshots/acid-ru.png) | ![Acid Chapel EN](screenshots/acid-en.png) |
+| ![Modern RU](screenshots/modern-ru.png) | ![Modern EN](screenshots/modern-en.png) |
+| ![Kova RU](screenshots/kova-ru.png) | ![Kova EN](screenshots/kova-en.png) |
+| ![Minimal RU](screenshots/minimal-ru.png) | ![Minimal EN](screenshots/minimal-en.png) |
+| ![Retro RU](screenshots/retro-ru.png) | ![Retro EN](screenshots/retro-en.png) |
+
+**First start and safe switch**
 | | |
 |---|---|
-| ![Resolution](screenshots/violet-res.png) | ![Color](screenshots/violet-color.png) |
-| ![About](screenshots/violet-about.png) | ![First start](screenshots/guide.png) |
-| ![Slot names](screenshots/violet-slots.png) | ![Custom palette](screenshots/custom-palette.png) |
-| ![Updates](screenshots/updates.png) | |
-
-## Credits
-Made by [Poganka](https://kova.page/k311n) · For [Sakume](https://kova.page/sakume)
-GitHub: [k311n](https://github.com/k311n)
-
-© 2026 k311n.intg — all rights reserved, see [LICENSE](LICENSE)
-
----
+| ![First start](screenshots/first-start.png) | ![Keep or revert](screenshots/keep-or-revert.png) |
+| ![About and feedback](screenshots/about.png) | |
 
 # REZO (ru)
 
-меняет разрешение экрана по хоткеям прям из игры без всяких альттабов, плюс насыщенность nvidia и ночная гамма для раста
+ставишь и играешь: скачал, выбрал набор (растянутое или нативное), жмешь клавишу в игре. если монитор не потянул и экран черный — через 10 сек само вернется как было. плюс насыщенность nvidia (только на картах nvidia) и ночная гамма для раста
 
-винда 10/11 · нужен .net framework 4 (он и так в винде есть) · версия 3.15
+винда 10/11 · нужен .net framework 4 (он и так в винде есть) · версия 4.0
 
 ## че умеет
 - **слоты разрешений** — до 8 штук плюс дефолт, на каждый свой бинд, есть бинд по кругу, ▶ применяет сразу, слотам можно дать свое имя (параметры → слоты), оно видно в списке, в трее и в быстром доступе
 - **цвет** (nvidia) — цифровая интенсивность вкл/выкл, 4 пресета и норма 50%, своя насыщенность на каждый слот и бинд который кидает между X и Y
 - **ночь в расте** — по бинду задирает гамму винды с середины шкалы до верха, жмешь еще раз и все как было (гамму надо один раз разблочить кнопкой)
 - **трей** — бинды работают из трея, можно чтоб крестик сворачивал в трей, автозапуск, старт свернутым
-- **вид** — 4 стиля (модерн, кова, минимал, ретро), 3 палитры (фиолет, кова и своя, где сам тыкаешь 6 цветов), меню вкладок сверху слева справа или снизу
+- **вид** — 5 стилей (по дефолту acid chapel, еще модерн, кова, минимал, ретро), 4 палитры (acid chapel, фиолет, кова и своя, где сам тыкаешь 6 цветов), меню вкладок сверху слева справа или снизу
 - **окно** — тянется за края как обычное, пресеты S M L, разворачивается на весь экран, snap работает, текст подстраивается под размер
+- **первый запуск** — гайд в 3 шага и готовые наборы: растянутое (1280×960, 1440×1080, 1024×768) или нативное + 1080p, только то что тянет монитор, клавиши ctrl+alt+f1…f3
+- **страховка** — новое разрешение спрашивает «оставить?» 10 сек, не ответил или esc — вернется прежнее (параметры → поведение)
+- **обратная связь** — о разработке → «пожелание» и «спасибо» открывают issue на гитхабе с шаблоном (только версия rezo и винды), «написать отзыв» шлет короткое сообщение в гугл форму прям из проги (тип, текст, контакт по желанию, больше ничего)
 - **обновы** — параметры → обновления → «проверить»: смотрит релизы на гитхабе и обновляет в один клик (установленная ставит себя тихо, портативная меняет свой exe и перезапускается), файл обязан быть подписан k311n.intg. проверка при запуске по дефолту выключена, больше прога в сеть не лезет
 - **сброс** — параметры → дополнительно → «сбросить все настройки»
 - у каждой настройки есть «?» где по-человечески написано че она делает, есть ru и eng
 - установщик с удалялкой, ярлыками и подписью
 
 ## как поставить
-качаешь `REZO_Setup_3.15.exe` в релизах и запускаешь, там же галочки на автозапуск, разблок гаммы и сертификат
+качаешь `REZO_Setup_4.0.exe` в релизах и запускаешь, там же галочки на автозапуск, разблок гаммы и сертификат
 или портативно — просто `REZO.exe` в любую папку, настройки лягут рядом
 
 ## бинды по дефолту

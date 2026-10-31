@@ -1,5 +1,21 @@
 # Changelog
 
+## 4.0 — 2026-10-31
+- **Start in 30 seconds:** first-start guide in 3 short steps with ready sets — Stretched (1280×960, 1440×1080, 1024×768) or Native + 1080p. Only modes your monitor supports, keys Ctrl+Alt+F1…F3
+- **Safe switch:** a resolution applied for the first time asks «Keep?» with a 10 s countdown; Enter keeps, Esc or no answer puts the old one back. Toggle in Settings → Behavior (on by default)
+- Shorter hint under the slots; tip about games in exclusive fullscreen swallowing hotkeys
+- Acid Chapel polish: brighter footer and labels, title no longer repeats the lime accent
+- Settings files: missing hotkey keys get their defaults one by one (a partial ini no longer wipes hotkeys), junk key codes are dropped, `1920×1080` with «×» is understood, a broken palette value falls back to the style's own palette
+- Updater compares versions by numbers (4.0 > 3.16)
+- New configs open in size L
+- Feedback in About: «Idea» / «Thanks» open a prefilled GitHub issue; «Write feedback» sends type, message and optional contact to a Google Form (TLS 1.2, once a minute max). Only REZO and Windows versions are attached, nothing else
+
+## 3.16 — 2026-10-31
+- New default style **Acid Chapel**: black, acid lime and neon magenta, 45° cut corners, scanlines, magenta glare, "+" marks, glitchy title, Bahnschrift + Consolas Bold. Same layout and features as before, only the look changed
+- Acid Chapel palette; new configs start with Acid Chapel style + palette, existing settings are kept
+- Acid Chapel is the first card in Look; all other styles, palettes and Custom work as before
+- New icon: cut-corner tile with a lime frame and a bold R with a magenta shadow (app, tray and installer)
+
 ## 3.15 — 2026-10-31
 - Check for updates: Settings → Updates. Asks GitHub Releases (k311n/REZO) for the latest version and updates in one click: installed copy downloads and runs the silent installer, portable copy downloads REZO.exe, swaps itself and restarts
 - Downloads only from github.com, the file must pass Authenticode and be signed by the same k311n.intg certificate, otherwise the update is cancelled
