@@ -1,8 +1,8 @@
-# REZO 5.0 — stretched res on a hotkey, game profiles that switch by themselves
+# REZO 5.0.1 — stretched res on a hotkey, game profiles that switch by themselves
 
 Download → pick a ready set (Stretched / Native) → press the key in the game. Change your screen resolution with global hotkeys straight from a game, no alt-tab. Wrong mode and a black screen? REZO puts the old one back after 10 seconds.
 
-Windows 10/11 · .NET Framework 4.x (already in Windows) · v5.0 · NVIDIA saturation works on NVIDIA cards only
+Windows 10/11 · .NET Framework 4.x (already in Windows) · v5.0.1 · NVIDIA saturation works on NVIDIA cards only
 
 ![REZO](screenshots/acid-en.png)
 
@@ -23,7 +23,7 @@ Windows 10/11 · .NET Framework 4.x (already in Windows) · v5.0 · NVIDIA satur
 - Installer with uninstaller, shortcuts, an Apps entry and a signed build (CN=k311n.intg)
 
 ## Install
-Download `REZO_Setup_5.0.exe` from [Releases](../../releases) and run it. The installer can also add autostart, unlock gamma and trust the k311n.intg certificate.
+Download `REZO_Setup_5.0.1.exe` from [Releases](../../releases) and run it. The installer can also add autostart, unlock gamma and trust the k311n.intg certificate.
 Portable: download `REZO.exe` and run it from any folder (settings are saved next to the exe).
 
 ## Default hotkeys
@@ -66,7 +66,7 @@ REZO is built to stay away from games. What it does and doesn't do:
 
 ставишь и кайфуешь: скачал, выбрал набор (растянутое или нативное), жмешь клавишу в игре. если монитор не потянул и экран черный — через 10 сек само вернется как было. плюс насыщенность nvidia (только на картах nvidia) и ночная гамма для раста
 
-винда 10/11 · нужен .net framework 4 (он и так в винде есть) · версия 5.0
+винда 10/11 · нужен .net framework 4 (он и так в винде есть) · версия 5.0.1
 
 ## че умеет
 - **слоты разрешений** — до 8 штук плюс дефолт, на каждый свой бинд, есть бинд по кругу, ▶ применяет сразу, слотам можно дать свое имя (параметры → слоты), оно видно в списке, в трее и в быстром доступе
@@ -85,7 +85,7 @@ REZO is built to stay away from games. What it does and doesn't do:
 - установщик с удалялкой, ярлыками и подписью
 
 ## как поставить
-качаешь `REZO_Setup_5.0.exe` в релизах и запускаешь, там же галочки на автозапуск, разблок гаммы и сертификат
+качаешь `REZO_Setup_5.0.1.exe` в релизах и запускаешь, там же галочки на автозапуск, разблок гаммы и сертификат
 или портативно — просто `REZO.exe` в любую папку, настройки лягут рядом
 
 ## бинды по дефолту

@@ -1,5 +1,10 @@
 # Changelog
 
+## 5.0.1 — 2026-11-01
+- **Feedback form restyled:** the «Write feedback» window now follows the app's style (Modern, Kova, Minimal, Retro, Acid Chapel) — fonts, colors, cut corners, focus highlight, DPI scaling; the type is chosen with three buttons instead of a drop-down. Texts, limits and what is sent are unchanged
+- Fixed: the old feedback form crashed on the Violet palette
+- **Sharper icon:** redrawn with supersampling, ICO now holds 16/20/24/32/40/48/64/96/128/256 px (256 as PNG); the installer refreshes the Windows icon cache so the desktop shortcut shows the new icon right away
+
 ## 5.0 — 2026-11-01
 - **Game profiles:** per game — resolution slot (or don't change), NVIDIA saturation (or don't change), night gamma on/off/don't change. Popular presets: Valorant, CS2, Rust, Dota 2; add, edit, delete in Settings → Game profiles (up to 8)
 - **Four trigger modes, Off by default:** Launch via REZO (▶ on a profile or a desktop shortcut `REZO.exe --play N`, recommended), Process (process name list every 2 s), Focus (focused window, riskiest — warned in «?»), WMI (instant start/stop events; without admin rights REZO says so and falls back to Process)
