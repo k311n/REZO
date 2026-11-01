@@ -1,5 +1,16 @@
 # Changelog
 
+## 5.1.1 — 2026-11-01
+- **Four new styles** in Look (same layout and features, only the look changes; each comes with its own palette):
+  - **Nightshade** (RU «для альтух») — black, deep wine and violet, silver; sharp corners, double frames, crosses, a chain in the title bar, fishnet and a cobweb in the background, serif titles
+  - **Riot** (RU «ыы женщины») — punk zine: dirty graphite, acid orange + electric cyan, torn paper edges, masking tape, stickers, a marker title with a highlighter stroke
+  - **Pick Me** (RU «я пикми») — pink background, light pink cards, soft rounded corners, bows and hearts, falling heart petals, script title
+  - **Sugar Bunny** (RU «я пикминяшка») — bubblegum pink to lavender, maximum rounding, bubble-letter title, sparkles and bubbles, stitched cards
+- Four matching palettes (8 in total). Picking a new style switches to its palette; going back to an old style from a new palette drops it (Acid → Acid Chapel, Kova → Kova, others → Violet). Any palette can still be picked by hand
+- Look shows 9 style cards in a 3×3 grid (2 columns with scrolling in S/M)
+- The feedback form follows the new styles; the game profile window is a bit taller so OK/Cancel are not cut off
+- Defaults are unchanged (new configs start with Acid Chapel); old settings are kept; an unknown style falls back to Acid Chapel, an unknown palette to the style's own
+
 ## 5.0.1 — 2026-11-01
 - **Feedback form restyled:** the «Write feedback» window now follows the app's style (Modern, Kova, Minimal, Retro, Acid Chapel) — fonts, colors, cut corners, focus highlight, DPI scaling; the type is chosen with three buttons instead of a drop-down. Texts, limits and what is sent are unchanged
 - Fixed: the old feedback form crashed on the Violet palette
