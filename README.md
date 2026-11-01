@@ -1,4 +1,4 @@
-# REZO 5.0 — install and play: stretched res on a hotkey, game profiles that switch by themselves
+# REZO 5.0 — stretched res on a hotkey, game profiles that switch by themselves
 
 Download → pick a ready set (Stretched / Native) → press the key in the game. Change your screen resolution with global hotkeys straight from a game, no alt-tab. Wrong mode and a black screen? REZO puts the old one back after 10 seconds.
 
@@ -64,7 +64,7 @@ REZO is built to stay away from games. What it does and doesn't do:
 
 # REZO (ru)
 
-ставишь и играешь: скачал, выбрал набор (растянутое или нативное), жмешь клавишу в игре. если монитор не потянул и экран черный — через 10 сек само вернется как было. плюс насыщенность nvidia (только на картах nvidia) и ночная гамма для раста
+ставишь и кайфуешь: скачал, выбрал набор (растянутое или нативное), жмешь клавишу в игре. если монитор не потянул и экран черный — через 10 сек само вернется как было. плюс насыщенность nvidia (только на картах nvidia) и ночная гамма для раста
 
 винда 10/11 · нужен .net framework 4 (он и так в винде есть) · версия 5.0
 
@@ -104,7 +104,7 @@ REZO is built to stay away from games. What it does and doesn't do:
 
 © 2026 k311n.intg все права защищены
 
-## античит
+## античиты не ругаются
 rezo специально держится подальше от игр. что делает и чего нет:
 - **делает:** меняет разрешение (ChangeDisplaySettingsEx), цифровую интенсивность nvidia (NVAPI) и гамму (SetDeviceGammaRamp) — это системные настройки, то же самое крутят панель винды и nvidia
 - **читает только имена процессов** из системного снимка (как диспетчер задач), не чаще раза в 2 сек. режим «фокус» еще смотрит, чей процесс у окна в фокусе
