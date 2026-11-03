@@ -5,3 +5,6 @@
 *.pdb
 *.ico
 *.cer
+# готовые сборки в корне (для скачивания zip)
+!/REZO_Setup.exe
+!/REZO.exe

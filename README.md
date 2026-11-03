@@ -23,8 +23,8 @@ Windows 10/11 · .NET Framework 4.x (already in Windows) · v5.1.1 · NVIDIA sat
 - Installer with uninstaller, shortcuts, an Apps entry and a signed build (CN=k311n.intg)
 
 ## Install
-Download `REZO_Setup_5.1.1.exe` from [Releases](../../releases) and run it. The installer can also add autostart, unlock gamma and trust the k311n.intg certificate.
-Portable: download `REZO.exe` and run it from any folder (settings are saved next to the exe).
+**[⬇ Download REZO_Setup.exe](../../raw/main/REZO_Setup.exe)** and run it, or grab `REZO_Setup_5.1.1.exe` from [Releases](../../releases). Downloaded the code as ZIP? `REZO_Setup.exe` is right in the root of the archive. The installer can also add autostart, unlock gamma and trust the k311n.intg certificate.
+Portable: `REZO.exe` (root of the repo / ZIP, or Releases), run it from any folder (settings are saved next to the exe).
 
 ## Default hotkeys
 | Action | Hotkey |
@@ -89,8 +89,8 @@ REZO is built to stay away from games. What it does and doesn't do:
 - установщик с удалялкой, ярлыками и подписью
 
 ## как поставить
-качаешь `REZO_Setup_5.1.1.exe` в релизах и запускаешь, там же галочки на автозапуск, разблок гаммы и сертификат
-или портативно — просто `REZO.exe` в любую папку, настройки лягут рядом
+**[⬇ скачать REZO_Setup.exe](../../raw/main/REZO_Setup.exe)** и запускаешь. качнул код зипом — `REZO_Setup.exe` лежит прямо в корне архива. или `REZO_Setup_5.1.1.exe` в релизах. там же галочки на автозапуск, разблок гаммы и сертификат
+или портативно — `REZO.exe` из корня (или из релизов) в любую папку, настройки лягут рядом
 
 ## бинды по дефолту
 - слоты 1 2 3 — ctrl+alt+1 2 3
